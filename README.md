@@ -173,25 +173,25 @@ and processes the received event.
 ---
 
 ## 🛠️ Technology Stack
-```text
-Technology	                                   Purpose
-Java 17                                        Programming Language
-Spring Boot 3.3.2	                             Backend Framework
-Spring Web	                                   REST APIs
-Spring Data JPA	                               Database Access
-Hibernate	                                     ORM
-Spring Security	                               Authentication
-JWT	                                           Stateless Authentication
-BCrypt	                                       Password Hashing
-Spring Cloud Gateway	                         API Gateway
-MySQL	                                         Relational Database
-NATS	                                         Event-Driven Messaging
-Maven	                                         Build & Dependency Management
-Lombok	                                       Boilerplate Reduction
-Docker	                                       NATS Containerization
-Postman	                                       API Testing
-Git / GitHub	                                 Version Control
-```
+
+| Technology | Purpose |
+|---|---|
+| **Java 17** | Programming Language |
+| **Spring Boot 3.3.2** | Backend Framework |
+| **Spring Web** | REST APIs |
+| **Spring Data JPA** | Database Access |
+| **Hibernate** | ORM |
+| **Spring Security** | Authentication |
+| **JWT** | Stateless Authentication |
+| **BCrypt** | Password Hashing |
+| **Spring Cloud Gateway** | API Gateway |
+| **MySQL** | Relational Database |
+| **NATS** | Event-Driven Messaging |
+| **Maven** | Build & Dependency Management |
+| **Lombok** | Boilerplate Reduction |
+| **Docker** | NATS Containerization |
+| **Postman** | API Testing |
+| **Git / GitHub** | Version Control |
 
 ---
 
@@ -436,15 +436,14 @@ users
 
 #### User Entity
 
-```text
 
-Field	                                   Description
-id	                                     Unique user identifier
-name	                                   User name
-email	                                   Unique email address
-password	                               BCrypt encoded password
-role	                                   User role
-```
+| Field | Description |
+|---|---|
+| **id** | Unique user identifier |
+| **name** | User name |
+| **email** | Unique email address |
+| **password** | BCrypt encoded password |
+| **role** | User role |
 
 The ` email ` field is configured as unique.
 
@@ -778,14 +777,12 @@ DELETE http://localhost:8080/api/users/{id}
 
 The application provides centralized exception handling.
 
-```text
-
-Error                                                 	HTTP Status
-User Not Found	                                        404 NOT_FOUND
-Duplicate Email	                                        409 CONFLICT
-Validation Failure	                                    400 BAD_REQUEST
-Invalid Credentials	                                    401 UNAUTHORIZED
-```
+| Error | HTTP Status |
+|---|---|
+| **User Not Found** | `404 NOT_FOUND` |
+| **Duplicate Email** | `409 CONFLICT` |
+| **Validation Failure** | `400 BAD_REQUEST` |
+| **Invalid Credentials** | `401 UNAUTHORIZED` |
 
 #### Example
 
